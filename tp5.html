@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <title>Formulaire</title>
   </head>
   <body>
+    <h1>Fiche d'inscription</h1>
     <form>
       <p>
         <label for="nom">Nom :</label
@@ -37,8 +38,9 @@
 
       <p>
         <label>Civilité :</label><br />
-        <input type="Checkbox" />Madame<br />
-        <input type="Checkbox" />Mr<br />
+        <input name="Civilite"type="radio" />Mme<br />
+        <input name="Civilite" type="radio" />Mr<br />
+        <input name="Civilite" type="radio" />Mlle<br />
       </p>
       <p>
         <label for="mbac">Pourcentage ou Moyenne en bac : </label>
@@ -62,14 +64,14 @@
       </p>
       <p>
         <p><label for="tel">Numéro télephone : </label>
-            <input type="number" id="tel" /></p>
+            <input type="number" id="tel" maxlength="10"/></p>
       </p>
       <p>
     
         <label for="lm">Lettre de motivation</label>
         <textarea id="lm"></textarea>
       </p>
-      
+      <p><input type="submit" value="Soumettre" /></p>
     </form>
   </body>
 </html>
